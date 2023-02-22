@@ -3,8 +3,15 @@ import Ad from '@/components/Ad/Ad'
 import Navbar from '@/components/Navbar/Navbar'
 import Slider from '@/components/Silder/Silder'
 import Hero from '@/components/Hero/Hero'
+import SideMenu from '@/components/SideMenu/SideMenu'
+import Type from '@/components/Type/Type'
+import Muscle from '@/components/Muscle&Strength/Muscle'
+import { useState } from 'react'
+import Footer from '@/components/Footer/Footer'
 
 export default function Home({data}) {
+  const [sideMenu,setSideMenu] = useState(false);
+  const [outOfSide,setOutOfSide] = useState(false)
   return (
     <>
       <Head>
@@ -15,13 +22,25 @@ export default function Home({data}) {
         
       </Head>
 
-      <main>
+      <main className='relative' onClick={()=>{
+        if(sideMenu && outOfSide)
+          setSideMenu(false)
+      }}>
         <Ad />
-        <Navbar />
-        <Hero/>
+        <Navbar setSideMenu={setSideMenu} />
+        {sideMenu && <SideMenu setOutOfSide={setOutOfSide}/>}
+        <Hero />
+        <Type/>
         <Slider/>
+        <Muscle muscle={data.muscle}  workouts={data.workouts} articles={data.articles}/>
+        <Footer />
+        {sideMenu && <div className="darker absolute z-40 top-0 bottom-0 left-0 right-0 backdrop-brightness-50">
+                          
+                      </div>
+        }
       </main>
     </>
+
   )
 }
 

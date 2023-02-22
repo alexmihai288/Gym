@@ -87,48 +87,48 @@
             "comments":"369"
         }
     ],
-    "article":[
+    "articles":[
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/body-types.jpg?itok=ybsGppi-",
             "title":"Your Body Type - Ectomorph, Mesomorph or Endomorph?",
             "description":"Your body type can influence how you respond to different types of workouts and diet plans. This guide helps you understand your body type (ectomorph, mesomorph or endomorph) and how you can structure your workout and diet for success.",
-            "reads":"6.9M Reads",
-            "comments":"451 Comments"
+            "posts":"6.9M",
+            "comments":"451"
         },
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/field/feature-image/article/7-lat-pull-downs-thumb.jpg",
             "title":"7 Lat Pulldown Variations for Serious Back Development",
             "description":"Build your lats in a variety of ways with these 7 lat pulldown variations! Read the article, find ones that'll fit well with your program, & build your back!",
-            "reads":"126.6K M Reads",
-            "comments":"2 Comments"
+            "posts":"126.6K",
+            "comments":"2"
         },
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/43_high_protein_meals_-_1200x630.jpg?itok=g5GtF73n",
             "title":"43 Best High Protein Recipes That Anyone Can Cook",
             "description":"High protein cooking can be easy and delicious. Don't believe it? Check out these 43 recipes for high protein meals that anyone can cook!",
-            "reads":"808.1K Reads",
-            "comments":"8 Comments"
+            "posts":"808.1K",
+            "comments":"8"
         },
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/arnold_chest_back_workout_-_1200x630.jpg?itok=YXLjTlvZ",
             "title":"Arnold's Chest & Back Workout: The Best Pump Of All",
             "description":"Everyone knows that Arnold lived for the pump, and this chest and back superset was his favorite workout to get both results and a hardcore pump.",
-            "reads":"485.1K Reads",
-            "comments":"26 Comments" 
+            "posts":"485.1K Reads",
+            "comments":"26" 
         },
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/ideal.jpg?itok=fEd0FCKJ",
             "title":"What Are The Ideal Body Measurements?",
             "description":"Find out what the ideal measurements are for a natural bodybuilder or a classical muscular male physique.",
-            "reads":"1M Reads",
-            "comments":"41 Comments" 
+            "posts":"1M",
+            "comments":"41" 
         },
         {
             "img":"https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/overtraining_-_1200x630.jpg?itok=RRadxqB-",
             "title":"Overtraining - Why Less Is More",
             "description":"This article will explore the reasons behind over training. Learn how many trainers know exactly why they shouldn't over train?",
-            "reads":"739.6K Reads",
-            "comments":"94 Comments" 
+            "posts":"739.6K",
+            "comments":"94" 
         }
     ]
 }
