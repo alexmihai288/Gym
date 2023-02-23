@@ -15,7 +15,7 @@ const MusclePost = ({img,title,description,posts,comments}) => {
         </div>
         <div className='postInformation text-[#33333]'>
             <div className='postText mb-3.5'>
-                <h2 className={`${openSans.className} font-bold text-[22px] mt-3`}>{title}</h2>
+                <h2 className={`${openSans.className} font-bold text-[22px] mt-3 `}>{title}</h2>
                 <div className='postDescription'>
                     <p className={`${roboto.className} text-[18px] mt-3 font-extralight`}>{description}</p>
                 </div>
