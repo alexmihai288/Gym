@@ -8,8 +8,10 @@ const openSans= Open_Sans({ subsets: ['latin']})
 const Muscle = ({muscle, workouts, articles}) => {
   return (
     <div className="px-3 md:max-w-[1300px] md:mx-auto md:p-0">
-        <div className="titleContainer">
+        <div className="titleContainer flex items-center">
             <h1 className={`${openSans.className} my-8 uppercase text-[#005599] font-bold text-center text-[30px] md:text-[36px]`}>NEW AT MUSCLE & STRENGTH</h1>
+            <i className="bi bi-box-arrow-up-right text-[18px] xs:text-[25px]"></i>
+
         </div>
         <div className="productContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {muscle.map(post=>{
