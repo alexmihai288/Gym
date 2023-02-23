@@ -13,7 +13,7 @@ export default function MuscleStrength({targetElement}){
 
 export async function getStaticPaths(){
     const data = await import ("/data/data.json") 
-    const allPaths=data.muscle.map(el=>{
+    const allPaths=data && data.muscle.map(el=>{
         return {
                 params:{
                     cat:`/muscle/${el.title}`
