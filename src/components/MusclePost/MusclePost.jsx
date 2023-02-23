@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { Open_Sans } from '@next/font/google'
 import { Roboto_Flex } from '@next/font/google'
 
@@ -9,7 +8,7 @@ const roboto = Roboto_Flex({subsets:['latin']})
 
 const MusclePost = ({img,title,description,posts,comments}) => {
   return (
-    <Link href={`/muscle/${title}`} className='border-b-[5px] border-[#f5f5f5] mt-3.5 md:border-none'>
+    <div className='border-b-[5px] border-[#f5f5f5] mt-3.5 md:border-none'>
         <div className='postImageContainer md:max-w-[100%]'>
             <Image width={4050} className="cursor-pointer object-fit w-[100%]" height={4050} src={img} alt="post image"/>
         </div>
@@ -32,7 +31,7 @@ const MusclePost = ({img,title,description,posts,comments}) => {
                 <button className='text-[22px] px-2 py-1 rounded-sm hover:bg-gradient-to-l bg-gradient-to-r from-lightBlue to-blue-800 text-[#e5e5e5]'>View Article</button>
             </div>
         </div>
-    </Link>
+    </div>
   )
 }
 
