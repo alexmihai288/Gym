@@ -22,7 +22,7 @@ export default function Home({data}) {
         
       </Head>
 
-      <main className='relative' onClick={()=>{
+      <main className='relative overflow-x-hidden' onClick={()=>{
         if(sideMenu && outOfSide)
           setSideMenu(false)
       }}>
@@ -31,8 +31,10 @@ export default function Home({data}) {
         {sideMenu && <SideMenu setOutOfSide={setOutOfSide}/>}
         <Hero />
         <Type/>
-        <Slider/>
-        <Muscle muscle={data.muscle}  workouts={data.workouts} articles={data.articles}/>
+        <div className='px-16 py-6'>
+          <Slider/>
+          <Muscle muscle={data.muscle}  workouts={data.workouts} articles={data.articles}/>
+        </div>
         <Footer />
         {sideMenu && <div className="darker absolute z-40 top-0 bottom-0 left-0 right-0 backdrop-brightness-50">
                           
