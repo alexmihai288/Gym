@@ -13,7 +13,7 @@ const MainLayout = ({children}) => {
     <div onClick={()=>{
         if(sideMenu && outOfSide)
           setSideMenu(false)
-      }} className="relative min-h-screen">
+      }}>
         <div>
           <Ad/>
           <Navbar setSideMenu={setSideMenu}/>
@@ -24,11 +24,11 @@ const MainLayout = ({children}) => {
           }
         </div>
 
-          <div className=''>
+          <div className='min-h-screen'>
             {children}
           </div>
 
-        <div className='absolute bottom-0 left-0 right-0'>
+        <div className=''>
           <Footer/>
         </div>
     </div>

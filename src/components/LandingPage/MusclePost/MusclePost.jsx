@@ -7,9 +7,9 @@ import Link from 'next/link'
 const openSans = Open_Sans({subsets:['latin']})
 const roboto = Roboto_Flex({subsets:['latin']})
 
-const MusclePost = ({img,title,description,posts,comments}) => {
+const MusclePost = ({img,title,description,posts,comments,data}) => {
   return (
-    <Link href={`/muscle/${title}`} className='border-b-[5px] border-[#f5f5f5] mt-3.5 md:border-none'>
+    <Link href={`/${data}/${title}`} className='border-b-[5px] border-[#f5f5f5] mt-3.5 md:border-none'>
         <div className='postImageContainer md:max-w-[100%]'>
             <Image width={4050} className="cursor-pointer object-fit w-[100%]" height={4050} src={img} alt="post image"/>
         </div>

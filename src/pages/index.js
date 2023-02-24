@@ -15,6 +15,7 @@ export default function Home({data}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className='relative overflow-x-hidden' >
+        
         <Hero />
         <Type/>
         <div className='md:px-16 md:py-4'>

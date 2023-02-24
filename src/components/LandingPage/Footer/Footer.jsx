@@ -9,10 +9,10 @@ const roboto = Roboto_Flex({subsets:['latin'] })
 
 const Footer = () => {
   return (
-    <div className='flex flex-col mt-14 relative'>
+    <div className='flex flex-col mt-14 relative bg-lightBlue'>
         
         <div className='p-3.5 aboveFooter gap-2 bg-[#0687e6] md:px-16 md:py-6 text-[#fefefe]'>
-            <div className='max-w-[1300px] mx-auto flex flex-col md:flex-row md:gap-8'>
+            <div className='max-w-[1300px] mx-auto flex flex-col md:flex-row md:gap-8 '>
                     <div>
                         <p className={`${openSans.className} font-bold text-[25px]`}>Free Workouts & Advice</p>
                         <p className={`${roboto.className} text-[17px] font-thin`}>We send you the latest workouts, videos, expert guides and deals.</p>
@@ -25,7 +25,7 @@ const Footer = () => {
    
         </div>
 
-        <div className="p-3.5 middleFooter bg-lightBlue text-white  md:px-16 md:py-6">
+        <div className="p-3.5 middleFooter  text-white  md:px-16 md:py-6">
             <div className='grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-1 max-w-[1300px] mx-auto'>
 
                 <div>

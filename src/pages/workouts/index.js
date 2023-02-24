@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Muscles from '@/components/MusclePage/Muscles/Muscles';
 
 
-export default function MusclePage({muscle}){
+export default function MusclePage({workouts}){
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function MusclePage({muscle}){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       
-        <Muscles task={muscle}/>
+        <Muscles task={workouts}/>
     </>
    
   )
@@ -21,11 +21,11 @@ export default function MusclePage({muscle}){
 
 
 export async function getServerSideProps(){
-    const {muscle} = await import("/data/data.json");
-    if(muscle){
+    const {workouts} = await import("/data/data.json");
+    if(workouts){
         return {
             props:{
-                muscle
+                workouts
             }
         }
     }else{

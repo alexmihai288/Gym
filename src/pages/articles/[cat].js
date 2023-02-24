@@ -3,8 +3,6 @@ import Head from "next/head";
 import SinglePost from "@/components/MusclePage/SinglePost/SinglePost";
 
 export default function SingleMuscle({target,res}){
-
-    
     return(
         <>
             <Head>
@@ -20,8 +18,9 @@ export default function SingleMuscle({target,res}){
 }
 
 export async function getStaticPaths(){
-    const {muscle} = await import("/data/data.json");
-    const allPaths = muscle.map(el=>(
+    const {articles} = await import("/data/data.json");
+
+    const allPaths = articles.map(el=>(
         {
             params:{
                 cat:el.title
@@ -36,12 +35,13 @@ export async function getStaticPaths(){
 }   
 
 export async function getStaticProps(context){
-    const {muscle} = await import("/data/data.json")
+    const {articles} = await import("/data/data.json")
     const req=await fetch("https://jsonplaceholder.typicode.com/comments");
     const res=await req.json();
+
     const searchedTitle = context.params.cat
-    const target = muscle.find(ev=>ev.title===searchedTitle)
-    console.log(res);
+    const target = articles.find(ev=>ev.title===searchedTitle)
+
     if(target)
         return{
             props:{
